@@ -56,7 +56,7 @@ def main():
     os.makedirs(os.path.join("data", "prepared"), exist_ok=True)
 
     input_lines = []
-    with open(input) as fd_in:
+    with open(input, encoding='utf-8') as fd_in:
         input_lines = fd_in.readlines()
 
     fd_out_train = open(output_train, "w", encoding="utf-8")
